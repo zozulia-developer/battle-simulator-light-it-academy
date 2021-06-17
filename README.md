@@ -1,2 +1,2 @@
-# battle-simulator-light-it-academy
-Python Battle Simulator
+# Hometask BattleSimulator
+python battle-simulator.py
