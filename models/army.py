@@ -1,3 +1,6 @@
+from functools import reduce
+
+
 class Army:
     def __init__(self, squads, strategy, name):
         self.squads = squads
@@ -11,4 +14,4 @@ class Army:
         self.squads = self.squads.filter(lambda squad: squad.is_alive())
 
     def get_power(self):
-        return self.squads.reduce(lambda a, b: a + b.het_power(), 0)
+        return reduce(lambda a, b: a + b.get_power(), self.squads, 0)

@@ -14,7 +14,7 @@ class StrategyFactory:
 
     @staticmethod
     def get_instance():
-        return StrategyFactory
+        return StrategyFactory()
 
     def create_strategy(self, data):
         if data == 'random':

@@ -4,7 +4,7 @@ import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 
 from models.vehicle import Vehicle
-from SoldierFactory import SoldierFactory
+from factory.SoldierFactory import SoldierFactory
 
 
 instance = None
@@ -19,11 +19,11 @@ class VehicleFactory:
 
     @staticmethod
     def get_instance():
-        return VehicleFactory
+        return VehicleFactory()
 
     def create_vehicle(self, data):
         soldier = SoldierFactory.get_instance()
-        return Vehicle(data.health, soldier.create_soldiers(data.operators))
+        return Vehicle(data['health'], data['recharge'], soldier.create_soldiers(data['operators']))
 
     def create_vehicles(self, arr):
-        return arr.map(lambda i: self.create_vehicle(i))
+        return [self.create_vehicle(i) for i in arr]

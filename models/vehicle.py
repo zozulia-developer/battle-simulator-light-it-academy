@@ -1,4 +1,5 @@
 from random import randrange
+from functools import reduce
 from .unit import Unit
 
 
@@ -41,4 +42,4 @@ class Vehicle(Unit):
         return True if self.total_health > 0 and self.health > 0 else False
 
     def get_power(self):
-        return self.operators.reduce(lambda a, b: a + b.get_power(), 0)
+        return reduce(lambda a, b: a + b.get_power(), self.operators, 0)

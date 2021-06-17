@@ -1,10 +1,13 @@
+from functools import reduce
+
+
 class Squad:
     """Squads are consisted out of a number of units (soldiers or vehicles), that behave as a coherent group
 
     """
 
-    def __init__(self, type, units):
-        self.type = type
+    def __init__(self, type_of, units):
+        self.type_of = type_of
         self.units = units
 
     def success_attack(self):
@@ -35,7 +38,7 @@ class Squad:
         self.units = self.units.filter(lambda unit: unit.is_alive())
 
     def get_power(self):
-        return self.units.reduce(lambda a, b: a + b.get_power(), 0)
+        return reduce(lambda a, b: a + b.get_power(), self.units, 0)
 
     def inc_exp_for_units(self):
         for unit in self.units:

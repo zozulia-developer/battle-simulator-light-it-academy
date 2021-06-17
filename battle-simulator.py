@@ -10,7 +10,7 @@ class MainApp:
             data = json.load(f)
 
         armies_factory = ArmyFactory.get_instance()
-        arr_armies = armies_factory.create_armies(data.armies)
+        arr_armies = armies_factory.create_armies(data['armies'])
         battle = Battle(arr_armies)
         battle.start()
 
