@@ -1,5 +1,5 @@
 from random import randrange
-from unit import Unit
+from .unit import Unit
 
 
 class Soldier(Unit):
