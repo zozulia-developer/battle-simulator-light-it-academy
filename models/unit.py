@@ -39,3 +39,6 @@ class Unit:
         time = monotonic()
         if time - self.recharge_time > self.recharge:
             self.start_recharge()
+
+    def is_ready(self, time):
+        return time - self.recharge_time >= self.recharge

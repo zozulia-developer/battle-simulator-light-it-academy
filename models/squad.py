@@ -11,7 +11,7 @@ class Squad:
         self.units = units
 
     def success_attack(self):
-        return self.units.reduce(lambda a, b: a * b.success_attack(), 1) ** (1 / len(self.units))
+        return reduce(lambda a, b: a * b.success_attack(), self.units, 1) ** (1 / len(self.units))
 
     def get_damage(self, dmg):
         dmg = dmg / len(self.units)
@@ -19,23 +19,23 @@ class Squad:
             i.get_damage(dmg)
 
     def start_recharge(self):
-        units = self.units.filter(lambda el: el.isReady)
+        units = [el for el in self.units if el.is_ready]
         for el in units:
             el.start_recharge()
 
     def time_recharge(self):
-        units = self.units.filter(lambda el: not el.isReady)
+        units = [el for el in self.units if not el.is_ready]
         for el in units:
             el.time_recharge()
 
     def make_damage(self):
-        return self.units.reduce(lambda a, b: a + b.make_damage(), 0)
+        return reduce(lambda a, b: a + b.make_damage(), self.units, 0)
 
     def is_alive(self):
         return any(el.is_alive() for el in self.units)
 
     def filter_alive_units(self):
-        self.units = self.units.filter(lambda unit: unit.is_alive())
+        self.units = [unit for unit in self.units if unit.is_alive()]
 
     def get_power(self):
         return reduce(lambda a, b: a + b.get_power(), self.units, 0)

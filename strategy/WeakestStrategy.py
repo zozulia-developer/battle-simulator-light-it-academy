@@ -6,8 +6,7 @@ class WeakestStrategy(BaseStrategy):
         super().__init__(type_of)
 
     def target(self, assault_army, arr_target):
-        # target_armies = arr_target.filter(lambda army: assault_army.name != army.name)
-        target_armies = [filter(lambda army: assault_army.name != army.name, arr_target)]
-        target_army = target_armies.sort(key=lambda a, b: a.get_power() - b.get_power())[0]
-        target_squad = target_army.squads.sort(key=lambda a, b: a.get_power() - b.get_power())[0]
-        return {target_army, target_squad}
+        target_armies = [army for army in arr_target if assault_army.name != army.name]
+        target_army = sorted(target_armies, key=lambda army: army.get_power())[0]
+        target_squad = sorted(target_army.squads, key=lambda squad: squad.get_power())[0]
+        return {'target_army': target_army, 'target_squad': target_squad}

@@ -11,7 +11,7 @@ class Army:
         return any(squad.is_alive() for squad in self.squads)
 
     def filter_alive_squads(self):
-        self.squads = self.squads.filter(lambda squad: squad.is_alive())
+        self.squads = [squad for squad in self.squads if squad.is_alive()]
 
     def get_power(self):
         return reduce(lambda a, b: a + b.get_power(), self.squads, 0)

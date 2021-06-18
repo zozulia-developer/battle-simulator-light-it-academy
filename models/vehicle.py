@@ -14,14 +14,15 @@ class Vehicle(Unit):
         self.operators = operators  # The number of soldiers required to operate the vehicle
 
     def success_attack(self):
-        gavg = self.operators.reduce(lambda a, b: a * b.success_attack(), 1) ** (1 / len(self.operators))
+        gavg = reduce(lambda a, b: a * b.success_attack(), self.operators, 1) ** (1 / len(self.operators))
         return 0.5 * (1 + self.health / 100) * gavg
 
     def make_damage(self):
-        return 0.1 + (self.operators.reduce(lambda a, b: a + b.get_experience(), 0) / 100)
+        return 0.1 + (reduce(lambda a, b: a + b.get_experience(), self.operators, 0) / 100)
 
     def set_total_health(self):
-        self.total_health = ((self.operators.reduce(lambda a, c: a + c.health, 0) / len(self.operators)) + self.health) / 2
+        self.total_health = ((reduce(lambda a, c: a + c.health, self.operators, 0) / len(
+            self.operators)) + self.health) / 2
 
     def get_damage(self, dmg):
         self.set_total_health()
@@ -36,7 +37,7 @@ class Vehicle(Unit):
 
     def set_experience(self):
         for i in self.operators:
-            i.set_experience(1)
+            i.set_experience()
 
     def is_alive(self):
         return True if self.total_health > 0 and self.health > 0 else False

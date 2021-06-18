@@ -8,7 +8,7 @@ class Battle:
         self.armies = armies
 
     def alive_armies(self):
-        self.armies = self.armies.filter(lambda army: army.is_alive())
+        self.armies = [army for army in self.armies if army.is_alive()]
 
     def start(self):
         while len(self.armies) > 1:
@@ -16,8 +16,8 @@ class Battle:
             assault_army = armies[randrange(0, len(armies) - 1)]
             assault_squad = assault_army.squads[randrange(0, len(assault_army.squads) - 1)]
             target = assault_army.strategy.target(assault_army, armies)
-            target_army = target.target_army
-            target_squad = target.target_squad
+            target_army = target['target_army']
+            target_squad = target['target_squad']
 
             if assault_squad.success_attack() > target_squad.success_attack():
                 damage = assault_squad.make_damage()
