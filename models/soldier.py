@@ -1,4 +1,4 @@
-from random import randrange
+from random import randint
 from .unit import Unit
 
 
@@ -22,7 +22,7 @@ class Soldier(Unit):
 
     def success_attack(self):
         """ Soldiers attack success probability """
-        return 0.5 * (1 + self.health/100) * randrange(50 + self.experience, 100) / 100
+        return 0.5 * (1 + self.health/100) * randint(50 + self.experience, 101) / 100
 
     def make_damage(self):
         """ The amount of damage a soldier can afflict """

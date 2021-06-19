@@ -1,10 +1,12 @@
 from time import monotonic
+from random import Random
 
 
 class Unit:
     """Each unit represents either a soldier or a vehicle maned by a predetermined number of soldiers
 
     """
+    _random = Random(228)
 
     def __init__(self, health, recharge):
         self.health = health  # Represents the health of the unit

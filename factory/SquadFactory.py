@@ -2,15 +2,14 @@ from factory.VehicleFactory import VehicleFactory
 from models.squad import Squad
 from factory.SoldierFactory import SoldierFactory
 
-instance = None
-
 
 class SquadFactory:
-    def __init__(self):
-        if instance:
-            pass
-        else:
-            self.instance = instance
+    _instance = None
+
+    def __new__(cls, *args, **kwargs):
+        if not cls._instance:
+            cls._instance = object.__new__(cls)
+        return cls._instance
 
     @staticmethod
     def get_instance():

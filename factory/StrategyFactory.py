@@ -2,15 +2,14 @@ from strategy.RandomStrategy import RandomStrategy
 from strategy.StrongestStrategy import StrongestStrategy
 from strategy.WeakestStrategy import WeakestStrategy
 
-instance = None
-
 
 class StrategyFactory:
-    def __init__(self):
-        if instance:
-            pass
-        else:
-            self.instance = instance
+    _instance = None
+
+    def __new__(cls, *args, **kwargs):
+        if not cls._instance:
+            cls._instance = object.__new__(cls)
+        return cls._instance
 
     @staticmethod
     def get_instance():

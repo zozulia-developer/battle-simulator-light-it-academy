@@ -1,4 +1,4 @@
-from random import randrange
+from random import randint
 from functools import reduce
 from .unit import Unit
 
@@ -27,10 +27,10 @@ class Vehicle(Unit):
     def get_damage(self, dmg):
         self.set_total_health()
         self.health = self.health - dmg * 0.6
-        if len(self.operators == 1):
+        if len(self.operators) == 1:
             self.operators[0].health -= dmg * 0.2
             return self.operators[0].health
-        random_operator = randrange(0, len(self.operators) - 1)
+        random_operator = randint(0, len(self.operators) - 1)
         for operator in self.operators:
             operator.get_damage(dmg * 0.1)
         self.operators[random_operator].health -= dmg * 0.1

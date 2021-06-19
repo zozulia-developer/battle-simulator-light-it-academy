@@ -1,21 +1,19 @@
 import os
 import sys
-
-sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
-
 from models.vehicle import Vehicle
 from factory.SoldierFactory import SoldierFactory
 
+sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
+# instance = None
 
-instance = None
 
+class VehicleFactory(object):
+    _instance = None
 
-class VehicleFactory:
-    def __init__(self):
-        if instance:
-            pass
-        else:
-            self.instance = instance
+    def __new__(cls, *args, **kwargs):
+        if not cls._instance:
+            cls._instance = object.__new__(cls)
+        return cls._instance
 
     @staticmethod
     def get_instance():
