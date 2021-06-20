@@ -1,34 +1,50 @@
 from time import monotonic
-from random import Random
 
 
 class Unit:
-    """Each unit represents either a soldier or a vehicle maned by a predetermined number of soldiers
+    """Represents either a soldier or a vehicle
+
+    Attributes:
+        health (int): unit health.
+        recharge (int): unit recharge.
 
     """
-    _random = Random(228)
 
     def __init__(self, health, recharge):
-        self.health = health  # Represents the health of the unit
-        self.recharge = recharge  # Represents the number of ms required to recharge the unit for an attack
+        self.health = health
+        self.recharge = recharge
         self.attack_ready = True
         self.recharge_time = 0
 
-    def is_alive(self):
-        """ Check if Unit is alive """
+    def is_alive(self) -> bool:
+        """ Check if Unit is alive
+
+        Returns:
+             bool: The return value. True for success, False otherwise.
+
+        """
         return self.health > 0
 
     def start_recharge(self):
-        """ Start recharging """
+        """ Start recharging
+
+        """
         self.attack_ready = False if self.attack_ready else True
         self.recharge_time = monotonic()
 
-    def get_health(self):
-        """ Get health of the unit """
+    def get_health(self) -> int:
+        """ Get health of the unit
+
+        Returns:
+             int: The return value.
+
+        """
         return self.health
 
     def set_health(self, val):
-        """ Set health of the unit """
+        """ Set health of the unit
+
+        """
         if val <= 0:
             self.health = 0
         elif val >= 100:
@@ -37,7 +53,9 @@ class Unit:
             self.health = val
 
     def time_recharge(self):
-        """ Recharging time """
+        """ Recharging time
+
+        """
         time = monotonic()
         if time - self.recharge_time > self.recharge:
             self.start_recharge()

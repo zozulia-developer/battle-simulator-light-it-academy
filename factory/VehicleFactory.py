@@ -4,7 +4,6 @@ from models.vehicle import Vehicle
 from factory.SoldierFactory import SoldierFactory
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
-# instance = None
 
 
 class VehicleFactory(object):
