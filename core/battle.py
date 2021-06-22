@@ -4,9 +4,9 @@ from random import randint, seed
 class Battle:
     armies = []
 
-    def __init__(self, armies: dict):
+    def __init__(self, armies: dict, seed_value: int):
         self.armies = armies
-        seed(228)  # for replays
+        seed(seed_value)  # for replays
 
     def alive_armies(self) -> None:
         self.armies = [army for army in self.armies if army.is_alive()]
