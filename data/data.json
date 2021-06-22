@@ -85,7 +85,7 @@
               "health": 100
             }
           ],
-          "type_of": "vehicles"
+          "type_unit": "vehicles"
         },
         {
           "units": [
@@ -168,7 +168,7 @@
               "health": 100
             }
           ],
-          "type_of": "vehicles"
+          "type_unit": "vehicles"
         },
         {
           "units": [
@@ -307,7 +307,7 @@
               "health": 100
             }
           ],
-          "type_of": "vehicles"
+          "type_unit": "vehicles"
         },
         {
           "units": [
@@ -412,7 +412,7 @@
               "health": 100
             }
           ],
-          "type_of": "vehicles"
+          "type_unit": "vehicles"
         },
         {
           "units": [
@@ -445,11 +445,11 @@
               "health": 100
             }
           ],
-          "type_of": "soldiers"
+          "type_unit": "soldiers"
         }
       ],
-      "strategy": "weakest",
-      "name": "Italy"
+      "strategy": "random",
+      "name": "Ukraine"
     },
     {
       "squads": [
@@ -568,7 +568,7 @@
               "health": 100
             }
           ],
-          "type_of": "vehicles"
+          "type_unit": "vehicles"
         },
         {
           "units": [
@@ -703,7 +703,7 @@
               "health": 100
             }
           ],
-          "type_of": "vehicles"
+          "type_unit": "vehicles"
         },
         {
           "units": [
@@ -834,7 +834,7 @@
               "health": 100
             }
           ],
-          "type_of": "vehicles"
+          "type_unit": "vehicles"
         },
         {
           "units": [
@@ -951,7 +951,7 @@
               "health": 100
             }
           ],
-          "type_of": "vehicles"
+          "type_unit": "vehicles"
         },
         {
           "units": [
@@ -996,7 +996,7 @@
               "health": 100
             }
           ],
-          "type_of": "soldiers"
+          "type_unit": "soldiers"
         },
         {
           "units": [
@@ -1041,7 +1041,7 @@
               "health": 100
             }
           ],
-          "type_of": "soldiers"
+          "type_unit": "soldiers"
         },
         {
           "units": [
@@ -1086,7 +1086,7 @@
               "health": 100
             }
           ],
-          "type_of": "soldiers"
+          "type_unit": "soldiers"
         },
         {
           "units": [
@@ -1131,7 +1131,7 @@
               "health": 100
             }
           ],
-          "type_of": "soldiers"
+          "type_unit": "soldiers"
         }
       ],
       "strategy": "random",
@@ -1182,7 +1182,7 @@
               "health": 100
             }
           ],
-          "type_of": "soldiers"
+          "type_unit": "soldiers"
         },
         {
           "units": [
@@ -1249,7 +1249,7 @@
               "health": 100
             }
           ],
-          "type_of": "vehicles"
+          "type_unit": "vehicles"
         },
         {
           "units": [
@@ -1388,7 +1388,7 @@
               "health": 100
             }
           ],
-          "type_of": "vehicles"
+          "type_unit": "vehicles"
         },
         {
           "units": [
@@ -1495,7 +1495,7 @@
               "health": 100
             }
           ],
-          "type_of": "vehicles"
+          "type_unit": "vehicles"
         },
         {
           "units": [
@@ -1520,7 +1520,7 @@
               "health": 100
             }
           ],
-          "type_of": "soldiers"
+          "type_unit": "soldiers"
         },
         {
           "units": [
@@ -1553,7 +1553,7 @@
               "health": 100
             }
           ],
-          "type_of": "soldiers"
+          "type_unit": "soldiers"
         },
         {
           "units": [
@@ -1578,7 +1578,7 @@
               "health": 100
             }
           ],
-          "type_of": "soldiers"
+          "type_unit": "soldiers"
         },
         {
           "units": [
@@ -1669,11 +1669,11 @@
               "health": 100
             }
           ],
-          "type_of": "vehicles"
+          "type_unit": "vehicles"
         }
       ],
-      "strategy": "strongest",
-      "name": "Russia"
+      "strategy": "random",
+      "name": "Italy"
     },
     {
       "squads": [
@@ -1708,7 +1708,7 @@
               "health": 100
             }
           ],
-          "type_of": "soldiers"
+          "type_unit": "soldiers"
         },
         {
           "units": [
@@ -1811,7 +1811,7 @@
               "health": 100
             }
           ],
-          "type_of": "vehicles"
+          "type_unit": "vehicles"
         },
         {
           "units": [
@@ -1844,10 +1844,10 @@
               "health": 100
             }
           ],
-          "type_of": "soldiers"
+          "type_unit": "soldiers"
         }
       ],
-      "strategy": "strongest",
+      "strategy": "random",
       "name": "Israel"
     },
     {
@@ -1991,7 +1991,7 @@
               "health": 100
             }
           ],
-          "type_of": "vehicles"
+          "type_unit": "vehicles"
         },
         {
           "units": [
@@ -2094,7 +2094,7 @@
               "health": 100
             }
           ],
-          "type_of": "vehicles"
+          "type_unit": "vehicles"
         },
         {
           "units": [
@@ -2139,7 +2139,7 @@
               "health": 100
             }
           ],
-          "type_of": "soldiers"
+          "type_unit": "soldiers"
         },
         {
           "units": [
@@ -2180,10 +2180,10 @@
               "health": 100
             }
           ],
-          "type_of": "soldiers"
+          "type_unit": "soldiers"
         }
       ],
-      "strategy": "strongest",
+      "strategy": "random",
       "name": "South Korea"
     },
     {
@@ -2269,7 +2269,7 @@
               "health": 100
             }
           ],
-          "type_of": "vehicles"
+          "type_unit": "vehicles"
         },
         {
           "units": [
@@ -2410,10 +2410,10 @@
               "health": 100
             }
           ],
-          "type_of": "vehicles"
+          "type_unit": "vehicles"
         }
       ],
-      "strategy": "strongest",
+      "strategy": "random",
       "name": "France"
     }
   ]

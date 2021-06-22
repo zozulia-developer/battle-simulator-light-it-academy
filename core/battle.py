@@ -1,16 +1,17 @@
-from random import randint
+from random import randint, seed
 
 
 class Battle:
     armies = []
 
-    def __init__(self, armies):
+    def __init__(self, armies: dict):
         self.armies = armies
+        seed(228)  # for replays
 
-    def alive_armies(self):
+    def alive_armies(self) -> None:
         self.armies = [army for army in self.armies if army.is_alive()]
 
-    def start(self):
+    def start(self) -> None:
         while len(self.armies) > 1:
             armies = self.armies
             assault_army = armies[randint(0, len(armies) - 1)]

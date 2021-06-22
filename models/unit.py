@@ -4,13 +4,13 @@ from time import monotonic
 class Unit:
     """Represents either a soldier or a vehicle
 
-    Attributes:
+    Args:
         health (int): unit health.
         recharge (int): unit recharge.
 
     """
 
-    def __init__(self, health, recharge):
+    def __init__(self, health: int, recharge: int):
         self.health = health
         self.recharge = recharge
         self.attack_ready = True
@@ -25,7 +25,7 @@ class Unit:
         """
         return self.health > 0
 
-    def start_recharge(self):
+    def start_recharge(self) -> None:
         """ Start recharging
 
         """
@@ -41,8 +41,11 @@ class Unit:
         """
         return self.health
 
-    def set_health(self, val):
+    def set_health(self, val: int) -> None:
         """ Set health of the unit
+
+        Args:
+            val (int): value of the health that need to set.
 
         """
         if val <= 0:
@@ -52,7 +55,7 @@ class Unit:
         else:
             self.health = val
 
-    def time_recharge(self):
+    def time_recharge(self) -> None:
         """ Recharging time
 
         """
@@ -60,5 +63,11 @@ class Unit:
         if time - self.recharge_time > self.recharge:
             self.start_recharge()
 
-    def is_ready(self, time):
+    def is_ready(self, time: int) -> int:
+        """ Check if unit is ready
+
+        Args:
+            time (int): time.
+
+        """
         return time - self.recharge_time >= self.recharge

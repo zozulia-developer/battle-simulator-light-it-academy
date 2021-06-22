@@ -5,7 +5,7 @@ from factory.ArmyFactory import ArmyFactory
 
 class MainApp:
     @staticmethod
-    def init():
+    def main():
         with open("data/data.json", "r") as f:
             data = json.load(f)
 
@@ -16,4 +16,4 @@ class MainApp:
 
 
 if __name__ == "__main__":
-    MainApp.init()
+    MainApp.main()
