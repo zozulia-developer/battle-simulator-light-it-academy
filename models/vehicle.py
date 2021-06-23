@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+""" Module for vehicle model
+
+This module demonstrates model of vehicle.
+
+"""
 from random import randint
 from functools import reduce
 from .unit import Unit

@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+""" Module for squad model
+
+This module demonstrates model of squad.
+
+"""
 from functools import reduce
 
 
@@ -38,17 +44,17 @@ class Squad:
         """ Start recharging for every unit
 
         """
-        units = [el for el in self.units if el.is_ready]
-        for el in units:
-            el.start_recharge()
+        units = [unit for unit in self.units if unit.is_ready]
+        for unit in units:
+            unit.start_recharge()
 
     def time_recharge(self) -> None:
         """ Time of recharge for every unit
 
         """
-        units = [el for el in self.units if not el.is_ready]
-        for el in units:
-            el.time_recharge()
+        units = [unit for unit in self.units if not unit.is_ready]
+        for unit in units:
+            unit.time_recharge()
 
     def make_damage(self) -> float:
         """ Calculation of making damage

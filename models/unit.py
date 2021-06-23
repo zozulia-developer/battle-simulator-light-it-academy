@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+""" Module for unit model
+
+This module demonstrates model of unit.
+
+"""
 from time import monotonic
 
 

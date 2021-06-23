@@ -1,7 +1,7 @@
 {
   "seed": 228,
-  "number_of_armies": 3,
+  "number_of_armies": 5,
   "strategy_per_army": "random",
-  "number_of_squads_per_army": 6,
+  "number_of_squads_per_army": 5,
   "number_of_units_per_squad": 10
 }

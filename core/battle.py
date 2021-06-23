@@ -1,17 +1,34 @@
+# -*- coding: utf-8 -*-
+""" Module for battle implementation
+
+This module demonstrates battle core.
+
+"""
 from random import randint, seed
 
 
 class Battle:
-    armies = []
+    """ Battle core
 
-    def __init__(self, armies: dict, seed_value: int):
+    Args:
+        armies(list): data from json.
+        seed_value(int): data from json, needed for replays
+
+    """
+    def __init__(self, armies: list, seed_value: int):
         self.armies = armies
-        seed(seed_value)  # for replays
+        seed(seed_value)
 
     def alive_armies(self) -> None:
+        """ Check if armies in list is alive
+
+        """
         self.armies = [army for army in self.armies if army.is_alive()]
 
     def start(self) -> None:
+        """ Implementation of the battle
+
+        """
         while len(self.armies) > 1:
             armies = self.armies
             assault_army = armies[randint(0, len(armies) - 1)]

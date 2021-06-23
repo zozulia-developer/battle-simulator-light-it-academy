@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+""" Module for army model
+
+This module demonstrates model of army.
+
+"""
 from functools import reduce
 
 

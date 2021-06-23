@@ -1,16 +1,17 @@
-from models.BaseStrategy import BaseStrategy
+# -*- coding: utf-8 -*-
+""" Module for random strategy
+
+This module demonstrates implementation of random strategy.
+
+"""
 from random import randint
+from models.base_strategy import BaseStrategy
 
 
 class RandomStrategy(BaseStrategy):
     """Represents random strategy
 
-    Args:
-        type_unit (str): unit type.
-
     """
-    def __init__(self, type_unit: str):
-        super().__init__(type_unit)
 
     def target(self, assault_army, arr_target) -> dict:
         """ Select target army and target squad

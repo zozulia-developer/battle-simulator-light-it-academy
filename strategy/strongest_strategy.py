@@ -1,15 +1,16 @@
-from models.BaseStrategy import BaseStrategy
+# -*- coding: utf-8 -*-
+""" Module for strongest strategy
+
+This module demonstrates implementation of strongest strategy.
+
+"""
+from models.base_strategy import BaseStrategy
 
 
 class StrongestStrategy(BaseStrategy):
     """Represents random strategy
 
-    Args:
-        type_unit (str): unit type.
-
     """
-    def __init__(self, type_unit: str):
-        super().__init__(type_unit)
 
     def target(self, assault_army, arr_target) -> dict:
         """ Select target army and target squad

@@ -430,7 +430,13 @@
             }
           ],
           "type_unit": "vehicles"
-        },
+        }
+      ],
+      "strategy": "random",
+      "name": "Army #1"
+    },
+    {
+      "squads": [
         {
           "units": [
             {
@@ -475,13 +481,7 @@
             }
           ],
           "type_unit": "soldiers"
-        }
-      ],
-      "strategy": "random",
-      "name": "Army #1"
-    },
-    {
-      "squads": [
+        },
         {
           "units": [
             {
@@ -777,7 +777,13 @@
             }
           ],
           "type_unit": "soldiers"
-        },
+        }
+      ],
+      "strategy": "random",
+      "name": "Army #2"
+    },
+    {
+      "squads": [
         {
           "units": [
             {
@@ -1051,13 +1057,7 @@
             }
           ],
           "type_unit": "vehicles"
-        }
-      ],
-      "strategy": "random",
-      "name": "Army #2"
-    },
-    {
-      "squads": [
+        },
         {
           "units": [
             {
@@ -1500,7 +1500,13 @@
             }
           ],
           "type_unit": "vehicles"
-        },
+        }
+      ],
+      "strategy": "random",
+      "name": "Army #3"
+    },
+    {
+      "squads": [
         {
           "units": [
             {
@@ -1763,10 +1769,735 @@
             }
           ],
           "type_unit": "soldiers"
+        },
+        {
+          "units": [
+            {
+              "health": 100,
+              "recharge": 40
+            },
+            {
+              "health": 100,
+              "recharge": 31
+            },
+            {
+              "health": 100,
+              "recharge": 37
+            },
+            {
+              "health": 100,
+              "recharge": 88
+            },
+            {
+              "health": 100,
+              "recharge": 91
+            },
+            {
+              "health": 100,
+              "recharge": 4
+            },
+            {
+              "health": 100,
+              "recharge": 94
+            },
+            {
+              "health": 100,
+              "recharge": 35
+            },
+            {
+              "health": 100,
+              "recharge": 35
+            },
+            {
+              "health": 100,
+              "recharge": 52
+            }
+          ],
+          "type_unit": "soldiers"
+        },
+        {
+          "units": [
+            {
+              "health": 100,
+              "recharge": 96,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 58
+                },
+                {
+                  "health": 100,
+                  "recharge": 81
+                },
+                {
+                  "health": 100,
+                  "recharge": 86
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 43,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 63
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 23,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 62
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 32,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 79
+                },
+                {
+                  "health": 100,
+                  "recharge": 76
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 58,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 48
+                },
+                {
+                  "health": 100,
+                  "recharge": 22
+                },
+                {
+                  "health": 100,
+                  "recharge": 5
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 61,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 41
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 85,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 26
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 59,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 64
+                },
+                {
+                  "health": 100,
+                  "recharge": 56
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 95,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 87
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 83,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 41
+                },
+                {
+                  "health": 100,
+                  "recharge": 64
+                }
+              ]
+            }
+          ],
+          "type_unit": "vehicles"
         }
       ],
       "strategy": "random",
-      "name": "Army #3"
+      "name": "Army #4"
+    },
+    {
+      "squads": [
+        {
+          "units": [
+            {
+              "health": 100,
+              "recharge": 66
+            },
+            {
+              "health": 100,
+              "recharge": 38
+            },
+            {
+              "health": 100,
+              "recharge": 19
+            },
+            {
+              "health": 100,
+              "recharge": 31
+            },
+            {
+              "health": 100,
+              "recharge": 43
+            },
+            {
+              "health": 100,
+              "recharge": 47
+            },
+            {
+              "health": 100,
+              "recharge": 23
+            },
+            {
+              "health": 100,
+              "recharge": 86
+            },
+            {
+              "health": 100,
+              "recharge": 41
+            },
+            {
+              "health": 100,
+              "recharge": 30
+            }
+          ],
+          "type_unit": "soldiers"
+        },
+        {
+          "units": [
+            {
+              "health": 100,
+              "recharge": 71
+            },
+            {
+              "health": 100,
+              "recharge": 41
+            },
+            {
+              "health": 100,
+              "recharge": 6
+            },
+            {
+              "health": 100,
+              "recharge": 66
+            },
+            {
+              "health": 100,
+              "recharge": 14
+            },
+            {
+              "health": 100,
+              "recharge": 92
+            },
+            {
+              "health": 100,
+              "recharge": 57
+            },
+            {
+              "health": 100,
+              "recharge": 13
+            },
+            {
+              "health": 100,
+              "recharge": 27
+            },
+            {
+              "health": 100,
+              "recharge": 12
+            }
+          ],
+          "type_unit": "soldiers"
+        },
+        {
+          "units": [
+            {
+              "health": 100,
+              "recharge": 23,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 36
+                },
+                {
+                  "health": 100,
+                  "recharge": 57
+                },
+                {
+                  "health": 100,
+                  "recharge": 55
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 8,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 23
+                },
+                {
+                  "health": 100,
+                  "recharge": 82
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 19,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 43
+                },
+                {
+                  "health": 100,
+                  "recharge": 59
+                },
+                {
+                  "health": 100,
+                  "recharge": 87
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 92,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 51
+                },
+                {
+                  "health": 100,
+                  "recharge": 17
+                },
+                {
+                  "health": 100,
+                  "recharge": 90
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 90,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 24
+                },
+                {
+                  "health": 100,
+                  "recharge": 87
+                },
+                {
+                  "health": 100,
+                  "recharge": 20
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 44,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 71
+                },
+                {
+                  "health": 100,
+                  "recharge": 38
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 22,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 87
+                },
+                {
+                  "health": 100,
+                  "recharge": 92
+                },
+                {
+                  "health": 100,
+                  "recharge": 62
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 57,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 87
+                },
+                {
+                  "health": 100,
+                  "recharge": 38
+                },
+                {
+                  "health": 100,
+                  "recharge": 63
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 84,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 17
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 60,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 84
+                },
+                {
+                  "health": 100,
+                  "recharge": 80
+                }
+              ]
+            }
+          ],
+          "type_unit": "vehicles"
+        },
+        {
+          "units": [
+            {
+              "health": 100,
+              "recharge": 42,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 31
+                },
+                {
+                  "health": 100,
+                  "recharge": 8
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 54,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 52
+                },
+                {
+                  "health": 100,
+                  "recharge": 15
+                },
+                {
+                  "health": 100,
+                  "recharge": 43
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 21,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 88
+                },
+                {
+                  "health": 100,
+                  "recharge": 78
+                },
+                {
+                  "health": 100,
+                  "recharge": 25
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 99,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 65
+                },
+                {
+                  "health": 100,
+                  "recharge": 53
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 65,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 73
+                },
+                {
+                  "health": 100,
+                  "recharge": 97
+                },
+                {
+                  "health": 100,
+                  "recharge": 19
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 42,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 60
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 44,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 49
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 56,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 9
+                },
+                {
+                  "health": 100,
+                  "recharge": 9
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 49,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 11
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 72,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 90
+                }
+              ]
+            }
+          ],
+          "type_unit": "vehicles"
+        },
+        {
+          "units": [
+            {
+              "health": 100,
+              "recharge": 59,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 14
+                },
+                {
+                  "health": 100,
+                  "recharge": 75
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 54,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 89
+                },
+                {
+                  "health": 100,
+                  "recharge": 8
+                },
+                {
+                  "health": 100,
+                  "recharge": 94
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 36,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 24
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 17,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 50
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 9,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 32
+                },
+                {
+                  "health": 100,
+                  "recharge": 47
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 73,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 89
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 7,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 18
+                },
+                {
+                  "health": 100,
+                  "recharge": 43
+                },
+                {
+                  "health": 100,
+                  "recharge": 46
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 80,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 61
+                },
+                {
+                  "health": 100,
+                  "recharge": 13
+                },
+                {
+                  "health": 100,
+                  "recharge": 20
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 57,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 65
+                },
+                {
+                  "health": 100,
+                  "recharge": 10
+                }
+              ]
+            },
+            {
+              "health": 100,
+              "recharge": 36,
+              "operators": [
+                {
+                  "health": 100,
+                  "recharge": 64
+                },
+                {
+                  "health": 100,
+                  "recharge": 16
+                }
+              ]
+            }
+          ],
+          "type_unit": "vehicles"
+        }
+      ],
+      "strategy": "random",
+      "name": "Army #5"
     }
   ]
 }

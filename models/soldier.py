@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+""" Module for soldier model
+
+This module demonstrates model of soldier.
+
+"""
 from random import randint
 from .unit import Unit
 
