@@ -4,7 +4,13 @@
 This module demonstrates battle core.
 
 """
+import logging
+from time import time
 from random import randint, seed
+
+logging.basicConfig(filename='./battle.log', filemode='w',
+                    format='%(asctime)s - %(levelname)s - %(message)s',
+                    datefmt='%H:%M:%S', level=logging.INFO)
 
 
 class Battle:
@@ -15,6 +21,7 @@ class Battle:
         seed_value(int): data from json, needed for replays
 
     """
+
     def __init__(self, armies: list, seed_value: int):
         self.armies = armies
         seed(seed_value)
@@ -29,6 +36,9 @@ class Battle:
         """ Implementation of the battle
 
         """
+        iteration = 0
+        start_time = time()
+        logging.info('--- The Battle begin!!! ---')
         while len(self.armies) > 1:
             armies = self.armies
             assault_army = armies[randint(0, len(armies) - 1)]
@@ -36,6 +46,9 @@ class Battle:
             target = assault_army.strategy.target(assault_army, armies)
             target_army = target['target_army']
             target_squad = target['target_squad']
+            iteration += 1
+            logging.info(f"Iteration #{iteration}")
+            logging.info(f"{assault_army.name} attack --> {target_army.name}\n")
 
             if assault_squad.success_attack() > target_squad.success_attack():
                 damage = assault_squad.make_damage()
@@ -46,5 +59,7 @@ class Battle:
                 target_squad.filter_alive_units()
                 target_army.filter_alive_squads()
                 self.alive_armies()
-
+        end_time = time()
+        logging.info(f'{self.armies[0].name} is Winner!')
+        logging.info(f'Battle time: {end_time - start_time:.2f}sec')
         print(f'{self.armies[0].name} is Winner!')
